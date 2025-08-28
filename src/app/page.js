@@ -43,6 +43,28 @@ const apps = [
     version: "v0.0.0",
     iconColor: 'text-orange-500',
   },
+  // pedigree_tool
+  {
+    id:'pedigree_tool',
+    name: 'Pedigree Analysis Tool', 
+    provider: 'Neom Scientific Solutions',
+    description:'The Pedigree Analysis Tool is a web-based application designed to generate, visualize, and analyze family pedigrees for genetic and medical research. It provides an interactive interface where users can build pedigrees, add relationships (parents, children, spouses, siblings), and explore inheritance patterns in an intuitive manner.',
+    icon: "Dna",
+    color: 'from-yellow-400 to-orange-300',
+    badges: [
+      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+    ],
+    features: [
+      { label: "Automated workflow processing", dot: "bg-blue-500" },
+      { label: "Clinical-grade analysis", dot: "bg-green-500" },
+      { label: "Real-time results", dot: "bg-purple-500" }
+    ],
+    status: { label: "Ready to use", color: "text-green-600" },
+    version: "v0.0.0",
+    iconColor: 'text-orange-500',
+    link:"https://neom-scientific.github.io/pedigree-analysis/"
+  },
   // vide
   {
     id: 'vide',
