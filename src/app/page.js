@@ -108,6 +108,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.1",
     iconColor: 'text-blue-500',
+    link:"https://neovar-frontend.onrender.com/"
   },
 
   // neoFastq
