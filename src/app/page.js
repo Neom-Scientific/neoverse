@@ -85,7 +85,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v1.0",
     iconColor: 'text-emerald-500',
-    link: "https://trf-dashboard-bay.vercel.app/"
+    link: "https://vide-woad.vercel.app/"
   },
 
   // neoVar
@@ -108,7 +108,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.1",
     iconColor: 'text-blue-500',
-    link:"https://neovar-frontend.onrender.com/"
+    link:"https://neovar-frontend-modules.vercel.app/"
   },
 
   // neoFastq
