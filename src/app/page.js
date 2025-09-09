@@ -11,7 +11,8 @@ import { Search, Heart, ChevronDown, Dna, Microscope, BarChart3, FileText, Star 
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavourite, removeFavourite } from '@/lib/redux/slices/favouriteSlice';
 
-const categories = ['Gemline', 'Enrichment', 'Somatic', 'RNA'];
+// const categories = ['Germline', 'Enrichment', 'Somatic', 'RNA'];
+const categories = ['Germline'];
 
 
 const iconMap = {
@@ -23,11 +24,12 @@ const iconMap = {
 
 const apps = [
 
+  // pre_process_qc
   {
     id: 'Pre-Process_qc',
     name: 'Pre-Process & QC',
     provider: 'Neom Scientific Solutions',
-    description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+    description: 'Pre-Process & QC is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
     icon: "FileText",
     color: 'from-cyan-400 to-blue-300',
     badges: [
@@ -43,12 +45,13 @@ const apps = [
     version: "v0.0.0",
     iconColor: 'text-orange-500',
   },
+
   // pedigree_tool
   {
-    id:'pedigree_tool',
-    name: 'Pedigree Analysis Tool', 
+    id: 'pedigree_tool',
+    name: 'Pedigree Analysis Tool',
     provider: 'Neom Scientific Solutions',
-    description:'The Pedigree Analysis Tool is a web-based application designed to generate, visualize, and analyze family pedigrees for genetic and medical research. It provides an interactive interface where users can build pedigrees, add relationships (parents, children, spouses, siblings), and explore inheritance patterns in an intuitive manner.',
+    description: 'The Pedigree Analysis Tool is a web-based application designed to generate, visualize, and analyze family pedigrees for genetic and medical research. It provides an interactive interface where users can build pedigrees, add relationships (parents, children, spouses, siblings), and explore inheritance patterns in an intuitive manner.',
     icon: "Dna",
     color: 'from-yellow-400 to-orange-300',
     badges: [
@@ -63,8 +66,9 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.0.0",
     iconColor: 'text-orange-500',
-    link:"https://neom-scientific.github.io/pedigree-analysis/"
+    link: "https://neom-scientific.github.io/pedigree-analysis/"
   },
+
   // vide
   {
     id: 'vide',
@@ -108,7 +112,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.1",
     iconColor: 'text-blue-500',
-    link:"https://neovar-frontend-modules.vercel.app/"
+    link: "https://neovar-frontend-modules.vercel.app/"
   },
 
   // neoFastq
@@ -155,11 +159,12 @@ const apps = [
     iconColor: 'text-orange-500',
   },
 
+  // Preview Compute
   {
     id: 'preview_compute',
-    name: 'Preview Compute',
+    name: 'PreView Compute',
     provider: 'Neom Scientific Solutions',
-    description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+    description: 'PreView Compute is a GUI-based tool for executing bioinformatics pipelines with minimal technical input from the user. It is designed for handling BCL input files, running automated analysis, and producing reports in a secured and encrypted way.',
     icon: "FileText",
     color: 'from-fuchsia-600 to-pink-500',
     badges: [
@@ -176,11 +181,12 @@ const apps = [
     iconColor: 'text-purple-500',
   },
 
+  // cardiogenomics
   {
     id: 'cardiogenomics',
     name: 'Cardio Genomics',
     provider: 'Neom Scientific Solutions',
-    description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+    description: 'Cardio Genomics is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
     icon: "FileText",
     color: 'from-pink-400 to-red-300',
     badges: [
@@ -197,11 +203,12 @@ const apps = [
     iconColor: 'text-orange-500',
   },
 
+  // LPWGS
   {
     id: 'LPWGS',
     name: 'LPWGS',
     provider: 'Neom Scientific Solutions',
-    description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+    description: 'LPWGS (Low Pass Whole Genome Sequencing) is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
     icon: "FileText",
     color: 'from-lime-400 to-green-300',
     badges: [
@@ -218,11 +225,12 @@ const apps = [
     iconColor: 'text-orange-500',
   },
 
+  // wellness
   {
     id: 'wellness',
     name: 'WellNess',
     provider: 'Neom Scientific Solutions',
-    description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+    description: 'Wellness is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
     icon: "FileText",
     color: 'from-green-700 to-green-400',
     badges: [
@@ -277,7 +285,7 @@ const Page = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
             Accurate, comprehensive, and efficient
             <span className="block bg-gradient-to-r from-orange-500 to-red-300 bg-clip-text text-transparent">
-              secondary analysis with Neom
+               analysis with Neom
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -327,7 +335,7 @@ const Page = () => {
               return (
                 <div
                   key={app.id}
-                  className="flip-card group bg-transparent rounded-2xl sm:rounded-3xl min-h-[420px] w-full max-w-md mx-auto shadow-md sm:shadow-lg"
+                  className="flip-card group bg-transparent rounded-2xl sm:rounded-3xl min-h-[420px] w-full max-w-xs md:max-w-xs sm:max-w-md mx-auto shadow-md sm:shadow-lg"
                 >
                   <div className="flip-card-inner relative w-full h-full">
                     {/* Front Side */}
