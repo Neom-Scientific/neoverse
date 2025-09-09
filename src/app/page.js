@@ -201,6 +201,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.0.0",
     iconColor: 'text-orange-500',
+    link: "https://cardio-genomics.vercel.app/"
   },
 
   // LPWGS
