@@ -25,66 +25,66 @@ const iconMap = {
 const apps = [
 
   // pre_process_qc
-  {
-    id: 'Pre-Process_qc',
-    name: 'Pre-Process & QC',
-    provider: 'Neom Scientific Solutions',
-    description: 'Pre-Process & QC is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
-    icon: "FileText",
-    color: 'from-cyan-400 to-blue-300',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
-    iconColor: 'text-orange-500',
-  },
+  // {
+  //   id: 'Pre-Process_qc',
+  //   name: 'Pre-Process & QC',
+  //   provider: 'Neom Scientific Solutions',
+  //   description: 'Pre-Process & QC is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+  //   icon: "FileText",
+  //   color: 'from-cyan-400 to-blue-300',
+  //   badges: [
+  //     { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+  //     { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+  //   ],
+  //   features: [
+  //     { label: "Automated workflow processing", dot: "bg-blue-500" },
+  //     { label: "Clinical-grade analysis", dot: "bg-green-500" },
+  //     { label: "Real-time results", dot: "bg-purple-500" }
+  //   ],
+  //   status: { label: "Ready to use", color: "text-green-600" },
+  //   version: "v0.0.0",
+  //   iconColor: 'text-orange-500',
+  // },
 
   // pedigree_tool
-  {
-    id: 'pedigree_tool',
-    name: 'Pedigree Analysis Tool',
-    provider: 'Neom Scientific Solutions',
-    description: 'The Pedigree Analysis Tool is a web-based application designed to generate, visualize, and analyze family pedigrees for genetic and medical research. It provides an interactive interface where users can build pedigrees, add relationships (parents, children, spouses, siblings), and explore inheritance patterns in an intuitive manner.',
-    icon: "Dna",
-    color: 'from-yellow-400 to-orange-300',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
-    iconColor: 'text-orange-500',
-    link: "https://neom-scientific.github.io/pedigree-analysis/"
-  },
+  // {
+  //   id: 'pedigree_tool',
+  //   name: 'Pedigree Analysis Tool',
+  //   provider: 'Neom Scientific Solutions',
+  //   description: 'The Pedigree Analysis Tool is a web-based application designed to generate, visualize, and analyze family pedigrees for genetic and medical research. It provides an interactive interface where users can build pedigrees, add relationships (parents, children, spouses, siblings), and explore inheritance patterns in an intuitive manner.',
+  //   icon: "Dna",
+  //   color: 'from-yellow-400 to-orange-300',
+  //   badges: [
+  //     { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+  //     { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+  //   ],
+  //   features: [
+  //     { label: "Automated workflow processing", dot: "bg-blue-500" },
+  //     { label: "Clinical-grade analysis", dot: "bg-green-500" },
+  //     { label: "Real-time results", dot: "bg-purple-500" }
+  //   ],
+  //   status: { label: "Ready to use", color: "text-green-600" },
+  //   version: "v0.0.0",
+  //   iconColor: 'text-orange-500',
+  //   link: "https://neom-scientific.github.io/pedigree-analysis/"
+  // },
 
   // vide
   {
     id: 'vide',
     name: 'VIDE',
     provider: 'Neom Scientific Solutions',
-    description: 'VIDE is the secure web-based is a web-based workflow management system designed to track and manage diagnostic samples. It streamlines and organizes the entire lifecycle of a sample — from registration to final report generation — ensuring traceability, accountability, and accuracy at every step.',
+    description: 'VIDE is a secure, web-based workflow management system built to track and manage diagnostic samples. It streamlines the entire sample lifecycle — from registration to final report generation — while ensuring complete traceability, accountability, and accuracy at every stage.',
     icon: "Microscope",
     color: 'from-emerald-500 to-teal-600',
     badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+      { label: "Secure & Web-Based", color: "bg-blue-50 text-blue-700 border-blue-100" },
+      { label: "Accuracy at Every Stage", color: "bg-green-50 text-green-700 border-green-100" }
     ],
     features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
+      { label: "End-to-End Sample Management", dot: "bg-blue-500" },
+      { label: "Complete Traceability", dot: "bg-green-500" },
+      { label: "Built-in Accountability", dot: "bg-purple-500" }
     ],
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v1.0",
@@ -92,168 +92,171 @@ const apps = [
     link: "http://122.160.11.246:5479"
   },
 
+    // neoFastq
+    {
+      id: 'neofastq',
+      name: 'NeoFastq',
+      provider: 'Neom Scientific Solutions',
+      description: 'NeoFastq is an automated GUI tool to assist demultiplexing and converting BCL files to FASTQ for Illumina Platform. It provides an intuitive interface for selecting input/output directories and running the process seamlessly. The tool ensures efficient handling of sequencing data with minimal user intervention.',
+      icon: "BarChart3",
+      color: 'from-purple-500 to-pink-600',
+      badges: [
+        { label: "Fast & Automated", color: "bg-blue-50 text-blue-700 border-blue-100" },
+        { label: "Linux-Optimized", color: "bg-green-50 text-green-700 border-green-100" }
+      ],
+      features: [
+        { label: "Automated Demultiplexing", dot: "bg-blue-500" },
+        { label: "Intuitive GUI", dot: "bg-green-500" },
+        { label: "Efficient Data Handling", dot: "bg-purple-500" }
+      ],
+      status: { label: "Ready to use", color: "text-green-600" },
+      version: "v1.0",
+      iconColor: 'text-purple-500',
+      note:"Neofastq runs only on Linux and requires the installed offline version of NeoFastq."
+    },
+
   // neoVar
   {
     id: 'neovar',
     name: 'NeoVar',
     provider: 'Neom Scientific Solutions',
-    description: 'NeoVar is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+    description: 'NeoVar is a secondary analysis tool that converts raw sequencing files (.fastq/.fq and compressed formats) into high-quality VCFs. It supports WES, Clinical Exome, and Carrier Screening, with two modes of analysis: Conventional and ML.',
     icon: "Dna",
     color: 'from-blue-500 to-indigo-600',
     badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+      { label: "High-Quality Variant Calls", color: "bg-blue-50 text-blue-700 border-blue-100" },
+      { label: "User-Friendly Interface", color: "bg-green-50 text-green-700 border-green-100" }
     ],
     features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
+      { label: "Automated Secondary Analysis", dot: "bg-blue-500" },
+      { label: "Workflow Support", dot: "bg-green-500" },
+      { label: "Dual Analysis Modes", dot: "bg-purple-500" }
     ],
     status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.1",
+    version: "v1.0",
     iconColor: 'text-blue-500',
     link: "http://122.160.11.246:5680"
   },
 
-  // neoFastq
-  {
-    id: 'neofastq',
-    name: 'NeoFastq',
-    provider: 'Neom Scientific Solutions',
-    description: 'NeoFastq is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
-    icon: "BarChart3",
-    color: 'from-purple-500 to-pink-600',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v2.1.0",
-    iconColor: 'text-purple-500',
-  },
+
 
   // clinexies
-  {
-    id: 'clinexies',
-    name: 'Clinexies',
-    provider: 'Neom Scientific Solutions',
-    description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
-    icon: "FileText",
-    color: 'from-orange-500 to-red-600',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
-    iconColor: 'text-orange-500',
-  },
+  // {
+  //   id: 'clinexies',
+  //   name: 'Clinexies',
+  //   provider: 'Neom Scientific Solutions',
+  //   description: 'Clinexies is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+  //   icon: "FileText",
+  //   color: 'from-orange-500 to-red-600',
+  //   badges: [
+  //     { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+  //     { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+  //   ],
+  //   features: [
+  //     { label: "Automated workflow processing", dot: "bg-blue-500" },
+  //     { label: "Clinical-grade analysis", dot: "bg-green-500" },
+  //     { label: "Real-time results", dot: "bg-purple-500" }
+  //   ],
+  //   status: { label: "Ready to use", color: "text-green-600" },
+  //   version: "v0.0.0",
+  //   iconColor: 'text-orange-500',
+  // },
 
   // Preview Compute
   {
     id: 'preview_compute',
     name: 'PreView Compute',
     provider: 'Neom Scientific Solutions',
-    description: 'PreView Compute is a GUI-based tool for executing bioinformatics pipelines with minimal technical input from the user. It is designed for handling BCL input files, running automated analysis, and producing reports in a secured and encrypted way.',
+    description: 'PreView Compute is a GUI-based tool for executing bioinformatics pipelines with minimal technical input. It handles Raw Sequencing Data input files, automates data processing and analysis, and generates secure, encrypted results efficiently.',
     icon: "FileText",
-    color: 'from-fuchsia-600 to-pink-500',
+    color: 'from-orange-500 to-red-600',
     badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+      { label: "Secure & Encrypted", color: "bg-blue-50 text-blue-700 border-blue-100" },
+      { label: "User-Friendly GUI", color: "bg-green-50 text-green-700 border-green-100" }
     ],
     features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
+      { label: "Pipeline Automation", dot: "bg-blue-500" },
+      { label: "BCL File Support", dot: "bg-green-500" },
+      { label: "Secure Results", dot: "bg-purple-500" }
     ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
+    status: { label: "Under Development", color: "text-red-600" },
+    version: "v1.0",
     iconColor: 'text-purple-500',
   },
 
   // cardiogenomics
-  {
-    id: 'cardiogenomics',
-    name: 'Cardio Genomics',
-    provider: 'Neom Scientific Solutions',
-    description: 'Cardio Genomics is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
-    icon: "FileText",
-    color: 'from-pink-400 to-red-300',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
-    iconColor: 'text-orange-500',
-    link: "http://122.160.11.246:5478"
-  },
+  // {
+  //   id: 'cardiogenomics',
+  //   name: 'Cardio Genomics',
+  //   provider: 'Neom Scientific Solutions',
+  //   description: 'Cardio Genomics is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+  //   icon: "FileText",
+  //   color: 'from-pink-400 to-red-300',
+  //   badges: [
+  //     { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+  //     { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+  //   ],
+  //   features: [
+  //     { label: "Automated workflow processing", dot: "bg-blue-500" },
+  //     { label: "Clinical-grade analysis", dot: "bg-green-500" },
+  //     { label: "Real-time results", dot: "bg-purple-500" }
+  //   ],
+  //   status: { label: "Ready to use", color: "text-green-600" },
+  //   version: "v0.0.0",
+  //   iconColor: 'text-orange-500',
+  //   link: "http://122.160.11.246:5478"
+  // },
 
   // LPWGS
-  {
-    id: 'LPWGS',
-    name: 'LPWGS',
-    provider: 'Neom Scientific Solutions',
-    description: 'LPWGS (Low Pass Whole Genome Sequencing) is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
-    icon: "FileText",
-    color: 'from-lime-400 to-green-300',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
-    iconColor: 'text-orange-500',
-  },
+  // {
+  //   id: 'LPWGS',
+  //   name: 'LPWGS',
+  //   provider: 'Neom Scientific Solutions',
+  //   description: 'LPWGS (Low Pass Whole Genome Sequencing) is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+  //   icon: "FileText",
+  //   color: 'from-lime-400 to-green-300',
+  //   badges: [
+  //     { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+  //     { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+  //   ],
+  //   features: [
+  //     { label: "Automated workflow processing", dot: "bg-blue-500" },
+  //     { label: "Clinical-grade analysis", dot: "bg-green-500" },
+  //     { label: "Real-time results", dot: "bg-purple-500" }
+  //   ],
+  //   status: { label: "Ready to use", color: "text-green-600" },
+  //   version: "v0.0.0",
+  //   iconColor: 'text-orange-500',
+  // },
 
   // wellness
-  {
-    id: 'wellness',
-    name: 'WellNess',
-    provider: 'Neom Scientific Solutions',
-    description: 'Wellness is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
-    icon: "FileText",
-    color: 'from-green-700 to-green-400',
-    badges: [
-      { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
-      { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
-    ],
-    features: [
-      { label: "Automated workflow processing", dot: "bg-blue-500" },
-      { label: "Clinical-grade analysis", dot: "bg-green-500" },
-      { label: "Real-time results", dot: "bg-purple-500" }
-    ],
-    status: { label: "Ready to use", color: "text-green-600" },
-    version: "v0.0.0",
-    iconColor: 'text-orange-500',
-  }
+  // {
+  //   id: 'wellness',
+  //   name: 'WellNess',
+  //   provider: 'Neom Scientific Solutions',
+  //   description: 'Wellness is to streamline and automate the conversion of raw sequencing data files — including .fastq, .fastq.gz, .fq, and .fq.gz formats — into high-quality Variant Call Format (VCF) files. This tool is specifically designed to support genomic testing workflows such as Whole Exome Sequencing (WES), Clinical Exome, and Carrier Screening.',
+  //   icon: "FileText",
+  //   color: 'from-green-700 to-green-400',
+  //   badges: [
+  //     { label: "Fast Processing", color: "bg-blue-50 text-blue-700 border-blue-100" },
+  //     { label: "High Accuracy", color: "bg-green-50 text-green-700 border-green-100" }
+  //   ],
+  //   features: [
+  //     { label: "Automated workflow processing", dot: "bg-blue-500" },
+  //     { label: "Clinical-grade analysis", dot: "bg-green-500" },
+  //     { label: "Real-time results", dot: "bg-purple-500" }
+  //   ],
+  //   status: { label: "Ready to use", color: "text-green-600" },
+  //   version: "v0.0.0",
+  //   iconColor: 'text-orange-500',
+  // }
 
 
 ];
 
 
 const Page = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Gemline');
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [searchTerm, setSearchTerm] = useState("");
   const dispatch = useDispatch();
   const favouriteApps = useSelector(state => state.favourite.favourites);
@@ -295,7 +298,7 @@ const Page = () => {
         </div>
 
         {/* Category Navigation */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
               key={category}
@@ -308,7 +311,7 @@ const Page = () => {
               {category}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Search and Filter Section */}
         <div className="flex flex-col md:flex-row gap-4 mb-12">
@@ -381,6 +384,10 @@ const Page = () => {
                             {feature.label}
                           </div>
                         ))}
+                      </div>
+
+                      <div>
+                        {app.note && <p className="text-xs text-blue-500 font-medium my-2">{app.note}</p>}
                       </div>
 
                       {/* Status and Version */}
