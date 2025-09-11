@@ -89,7 +89,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v1.0",
     iconColor: 'text-emerald-500',
-    link: "https://vide-woad.vercel.app/"
+    link: "http://122.160.11.246:5479"
   },
 
   // neoVar
@@ -112,7 +112,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.1",
     iconColor: 'text-blue-500',
-    link: "https://neovar-frontend-modules.vercel.app/"
+    link: "http://122.160.11.246:5680"
   },
 
   // neoFastq
@@ -201,7 +201,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.0.0",
     iconColor: 'text-orange-500',
-    link: "https://cardio-genomics.vercel.app/"
+    link: "http://122.160.11.246:5478"
   },
 
   // LPWGS
