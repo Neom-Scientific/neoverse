@@ -1,15 +1,14 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import { CiHeart } from "react-icons/ci";
-import { AiFillHeart } from "react-icons/ai";
+
 // import NeomLogo from '../../public/images/new_logo.png';
 import NeomLogo from '../../public/images/updated_logo_neom-removebg-preview.png';
 import Image from 'next/image';
-import { Card } from '@/components/ui/card';
-import { Input } from "@/components/ui/input"
+
 import { Search, Heart, ChevronDown, Dna, Microscope, BarChart3, FileText, Star } from 'lucide-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavourite, removeFavourite } from '@/lib/redux/slices/favouriteSlice';
+import { useRouter } from 'next/navigation';
 
 // const categories = ['Germline', 'Enrichment', 'Somatic', 'RNA'];
 const categories = ['Germline'];
@@ -89,7 +88,8 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v1.0",
     iconColor: 'text-emerald-500',
-    link: "http://122.160.11.246:5479"
+    // link: "http://122.160.11.246:5479"
+    link:"/vide"
   },
 
   // neoVar
@@ -112,7 +112,8 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.1",
     iconColor: 'text-blue-500',
-    link: "http://122.160.11.246:5680"
+    // link: "http://122.160.11.246:5680"
+    link: "/neovar"
   },
 
   // neoFastq
@@ -201,7 +202,7 @@ const apps = [
     status: { label: "Ready to use", color: "text-green-600" },
     version: "v0.0.0",
     iconColor: 'text-orange-500',
-    link: "http://122.160.11.246:5478"
+    link: "/cardio-predict"
   },
 
   // LPWGS
@@ -263,6 +264,8 @@ const Page = () => {
     app.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const router = useRouter();
+
   const toggleFavorite = (app) => {
     const isFav = favouriteApps.some(fav => fav.id === app.id);
     if (isFav) {
@@ -286,7 +289,7 @@ const Page = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
             Accurate, comprehensive, and efficient
             <span className="block bg-gradient-to-r from-orange-500 to-red-300 bg-clip-text text-transparent">
-               analysis with Neom
+              analysis with Neom
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -427,7 +430,15 @@ const Page = () => {
                         </p>
                         <div className="mt-auto z-10">
                           <button
-                            {...app && app.link ? { onClick: () => window.open(app.link, '_blank') } : {}}
+                            onClick={() => {
+                              if (app.link) {
+                                if (app.link.startsWith('http')) {
+                                  window.open(app.link, '_blank');
+                                } else {
+                                  router.push(app.link);
+                                }
+                              }
+                            }}
                             className={`w-full py-3 px-4 cursor-pointer bg-gradient-to-r ${app.color} text-white font-semibold rounded-xl transition-all duration-200 hover:shadow-lg transform hover:scale-[1.02]`}>
                             Launch App
                           </button>
